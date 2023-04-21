@@ -41,7 +41,10 @@ function function2() {
   } else if (type1 === "3") {
     ctx.drawImage(img3,0,0,500,500,112,45,100,100);
   } else if (type1 === "4") {
-    ctx.drawImage(img4,0,0,500,500,105,40,100,100);
+    ctx.moveTo(25,25);
+    ctx.lineTo(75,55);
+    ctx.stroke();
+    /*ctx.drawImage(img4,0,0,500,500,105,40,100,100);*/
   }
 
 /* IF statement for drawing Amplifier B for units and organizations, FM 1-02.2 Chpt 2*/
