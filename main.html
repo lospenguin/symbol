@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Army G-S TEST</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="top">
+      <img src="ash4.png" id="ashImg" alt="symbol here" width="40%">
+    </div>
+
+
+    <div class="bottom">
+
+      <div class="info">
+        Select your adventure!
+      </div>
+
+      <div class="input-box">
+        <select title="selTitle1" name="selection1" id="type1">
+          <option value="1">Friendly</option>
+          <option value="2">Enemy</option>
+          <option value="3">Neutral</option>
+	  <option value="4">Unknown</option>
+        </select>
+        <select title="selTitle2" name="selection2" id="type2">
+          <option value="1">Squad</option>
+          <option value="2">Section</option>
+          <option value="3">Platoon</option>
+	  <option value="4">Company</option>
+        </select>
+      </div>
+
+      <div class="button-box">
+        <button type="button" onclick="function2()">Create!</button>
+      </div>
+
+      <div class="footer">
+        Symbols and Graphics depicted IAW FM 1-02.2
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="wrapper2">
+    <canvas id="canvas1" style="border:1px solid #8a8181;"></canvas>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+<!--
+<input type="text" placeholder="Enter Type" maxlength="10">
+
+-->
