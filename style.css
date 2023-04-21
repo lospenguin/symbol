@@ -91,7 +91,7 @@ a {
   font-weight: 500;
 }
 
-#button1 {
+.wrapper .bottom button {
   margin: 12px auto auto auto;
   border: #000000 1px solid;
   height: 32px;
