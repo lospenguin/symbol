@@ -18,7 +18,6 @@ img6.src = "symbAmpBSect.svg";
 img7.src = "symbAmpBPlt.svg";
 img8.src = "symbAmpBCo.svg";
 
-
 /*declare and assign software variables to element input IDs*/
 let [a, b, c] = ["canvas1", "type1", "type2"];
 
