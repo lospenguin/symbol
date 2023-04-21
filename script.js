@@ -21,14 +21,14 @@ img6 = new Image();
 img7 = new Image();
 img8 = new Image();
 
-img1.src = "symbFrameActvInstFdlyK.svg";
-img2.src = "symbFrameActvInstEnyK.svg";
-img3.src = "symbFrameActvInstNeutK.svg";
-img4.src = "symbFrameActvInstUnkK.svg";
-img5.src = "symbAmpBSqd.svg";
-img6.src = "symbAmpBSect.svg";
-img7.src = "symbAmpBPlt.svg";
-img8.src = "symbAmpBCo.svg";
+img1.src = "/symbFrameActvInstFdlyK.svg";
+img2.src = "/symbFrameActvInstEnyK.svg";
+img3.src = "/symbFrameActvInstNeutK.svg";
+img4.src = "/symbFrameActvInstUnkK.svg";
+img5.src = "/symbAmpBSqd.svg";
+img6.src = "/symbAmpBSect.svg";
+img7.src = "/symbAmpBPlt.svg";
+img8.src = "/symbAmpBCo.svg";
 
 /*declare and assign software variables to element input IDs*/
 let [a, b, c] = ["canvas1", "type1", "type2"];
