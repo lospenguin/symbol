@@ -1,4 +1,14 @@
-
+window.addEventListener('load',function(){
+  let callFunction2 = document.getElementById("button1")
+  callFunction2.addEventListener('touchstart',function(e){
+    e.preventDefault();
+    function2();
+  }, false)
+  callFunction2.addEventListener('click',function(e){
+    e.preventDefault();
+    function2();
+  }, false)
+});
 
 img1 = new Image();
 img2 = new Image();
