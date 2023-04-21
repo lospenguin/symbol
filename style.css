@@ -86,13 +86,9 @@ body {
   font-weight: 500;
 }
 
-.wrapper .bottom .button-box {
+button {
+  margin: 20px;
   height: 35px;
-  padding: 12px;
-  margin: 15px 15px 10px 0;
-}
-
-.wrapper .bottom .button-box button {
   padding: 6px;
   width: 40%;
   background-color: #7fbee1;
