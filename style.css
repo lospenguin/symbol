@@ -1,31 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* adds padding & border included in heigh and width sizing*/
-  font-family: arial, sans-serif;
-}
-
-body {
-  background-color: #4d4848;
-}
-
-.top {
-  padding: 2%;
-}
-
-.top img {
-  background-color: #333333;
-  width: 100px;
-}
-
-.bottom {
-  background-color: #284b5d;
-  margin: 2%;
-}
-
-#canvas1 {
-  margin: 2%;
-  background-color: #333333;
-  height: 100px;
-  border: black solid 2px;
-}
+window.onload = function () {
+  let c = document.getElementById("canvas1");
+  let ctx = c.getContext("2d");
+  let img = document.getElementById("img0");
+  ctx.drawImage(img, 10, 10, 45, 45);
+};
