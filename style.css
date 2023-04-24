@@ -49,14 +49,27 @@ body {
 }
 
 .wrapper2 #outputChpt2MainA {
-  top: 20px;
-  height: 40%;
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  height: 85px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .wrapper2 #outputChpt2MainB {
-  top: 5px;
-  left: 25px;
-  height: 10%;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  height: 25px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .wrapper .top {
