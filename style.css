@@ -62,9 +62,9 @@ body {
 
 .wrapper2 #outputChpt2MainB {
   position: absolute;
-  top: 40px;
+  top: 52px;
   left: 50%;
-  height: 25px;
+  height: 16px;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
