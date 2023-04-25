@@ -1,5 +1,14 @@
 "use strict";
 
+  const canvas = document.getElementById("canvas1");
+  const ctx = canvas.getContext("2d");
+  ctx.lineWidth = 1.2;
+  ctx.reset();
+  ctx.beginPath();
+  ctx.moveTo(25,25);
+  ctx.lineTo(50,50);
+  ctx.stroke();
+
 /*listen for button click on Create Button to trigger function1*/
 let touchEvent = "ontouchstart" in window ? "touchstart" : "click";
 document.getElementById("button1").addEventListener(touchEvent, function1);
@@ -104,14 +113,7 @@ const imgSelectors = ["inputChpt2MainA", "inputChpt2ModB"];
 
 /*run through list of input selections in imgTileArea array to pull from selector and push to img output in html wrapper2*/
 function function1() {
-  const canvas = document.getElementById("canvas1");
-  const ctx = canvas.getContext("2d");
-  ctx.lineWidth = 1.2;
-  ctx.reset();
-  ctx.beginPath();
-  ctx.moveTo(25,25);
-  ctx.lineTo(50,50);
-  ctx.stroke();
+
   for (let i = 0; i < imgSelectors.length; i++) {
     let imgInput = document.getElementById(imgSelectors[i]).value;
     let imgVar = document.createElement("img");
