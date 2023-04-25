@@ -109,6 +109,7 @@ const imgSelectors = ["inputChpt2MainA", "inputChpt2ModB"];
 function function1() {
   const canvas = document.getElementById("canvas1");
   const ctx = canvas.getContext("2d");
+  ctx.clearRect(0,0, canvas.width, canvas.height);
   ctx.lineWidth = 1.2;
   for (let i = 0; i < imgSelectors.length; i++) {
     let imgInput = document.getElementById(imgSelectors[i]).value;
