@@ -110,10 +110,6 @@ function function1() {
   const canvas = document.getElementById("canvas1");
   const ctx = canvas.getContext("2d");
   ctx.lineWidth = 1.2;
-  ctx.beginPath();
-  ctx.moveTo(25, 25);
-  ctx.lineTo(50, 50);
-  ctx.stroke();
   for (let i = 0; i < imgSelectors.length; i++) {
     let imgInput = document.getElementById(imgSelectors[i]).value;
     let imgVar = document.createElement("img");
