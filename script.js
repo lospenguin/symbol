@@ -1,8 +1,8 @@
 "use strict";
 
 /*listen for button click on Create Button to trigger function1*/
-let btnClick = document.getElementById("button1");
-btnClick.addEventListener("click", function1);
+let touchEvent = "ontouchstart" in window ? "touchstart" : "click";
+document.getElementById("button1").addEventListener(touchEvent, function1);
 
 /*array for storing all Main A unit icon frames*/
 const unitMainA = ["Select...", "Friendly", "Enemy", "Neutral", "Unknown"];
