@@ -1,9 +1,5 @@
 "use strict";
 
-const canvas = document.getElementById("canvas1");
-const ctx = canvas.getContext("2d");
-ctx.lineWidth = 1.2;
-
 /*listen for button click on Create Button to trigger function1*/
 let btnClick = document.getElementById("button1");
 btnClick.addEventListener("click", function1);
@@ -108,10 +104,13 @@ const imgSelectors = ["inputChpt2MainA", "inputChpt2ModB"];
 
 /*run through list of input selections in imgTileArea array to pull from selector and push to img output in html wrapper2*/
 function function1() {
+  const canvas = document.getElementById("canvas1");
+  const ctx = canvas.getContext("2d");
+  ctx.lineWidth = 1.2;
   ctx.reset();
   for (let i = 0; i < imgSelectors.length; i++) {
     let imgInput = document.getElementById(imgSelectors[i]).value;
-    let imgVar = new Image();
+    let imgVar = document.createElement("img");
     imgVar.src = imgArrayName[i][imgInput];
     imgVar.onload = function () {
       ctx.drawImage(
