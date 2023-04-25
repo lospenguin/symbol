@@ -19,7 +19,7 @@ for (let i = 0; i < unitMainA.length; i++) {
   select.appendChild(option);
 }
 
-/*array for storing all Mod B unit echelon modifiers*/
+/*array for storing all Mod B unit echelon modifier things*/
 const unitModB = [
   "Select...",
   "Team",
