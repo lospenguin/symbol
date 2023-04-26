@@ -1,3 +1,7 @@
+<!--Open Source Software by Los Penguin
+This full stack web application sources itself from U.S. Army Field Manual 1-02.2, Military Symbols.
+Last Update: 2023 04 25-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,32 +18,47 @@
   <div class="wrapper">
 
     <div class="top">
-      <img src="ash4.png" id="ashImg" alt="symbol here" width="40%">
+      <p>MILITARY SYMBOLS</p>
     </div>
 
-    <div class="bottom">
-
-      <div class="info">
-        Select your adventure!
+    <!-- main screen displayed on startup but display set to none after selector calls function in javascript-->
+    <div class="bottom" id="screenMain" style="display: block;">
+      <div id="screenMaintxt" class="info">Select Category...</div>
+      <div class="input-box">
+        <select title="selTitle1" id="typeMain">
+          <option value="1">Unit & Organizations</option>
+          <option value="2">Equipment</option>
+          <option value="3">Installation/Activities</option>
+          <option value="4">Control Measures</option>
+          <option value="4">Tactical Mission Tasks</option>
+        </select>
       </div>
+      <div class="button">
+        <button id="btnMain" type="button">NEXT...</button>
+      </div>
+      <div class="footer" title="2023 - LosPenguin">Note: Only Unit & Organization is working at the moment. Excuse the
+        construction. More coming soon. This is an Open Source product.</div>
+    </div>
 
+    <!-- unit org screen displayed on main screen selector, display set to none at start of software load-->
+    <div class="bottom" id="screenUnit" style="display: none;">
+      <div class="info">UNIT & ORGANIZATION</div>
       <div class="input-box">
         <select title="inputChpt2MainA" id="inputChpt2MainA"></select>
         <select title="inputChpt2ModB" id="inputChpt2ModB"></select>
       </div>
-
       <div class="button">
-        <button id="button1" type="button">Create!</button>
+        <button id="button1" type="button">CREATE</button>
       </div>
-
-      <div class="footer">
-        Symbols and Graphics depicted IAW FM 1-02.2
+      <div class="button">
+        <button id="btnReturn" type="button">Main Screen</button>
       </div>
-
+      <div class="footer" title="2023 - LosPenguin">Open Source</div>
     </div>
 
   </div>
 
+  <!--canvas wrapper set at bottom of screen-->
   <div class="wrapper2">
     <canvas id="canvas1"></canvas>
   </div>
@@ -48,3 +67,34 @@
 </body>
 
 </html>
+
+<!--LosPenguin would like to thank the following groups/people for continuing to give people awesome free tutorials through YouTube:
+QuickCodingTuts
+freeCodeCamp.org
+developedbyed
+PowerApps Tutorial
+Pragmatic Works
+Voidstar Live & Zack Freedman
+YaleCourses
+Veritasium
+Tim Rodenbroker Creative Coding
+Tech with Tim
+sentdex
+Programming with Mosh
+MIT OpenCourseWare
+Kurzgesagt
+Keith Galli
+Jabrils
+Grant Abbitt
+Dedouze
+CS50 Harvard
+CS Dojo
+Corey Schafer
+Computerphile
+Code Parade
+ClarityCoders
+BornCG
+Blender Guru
+3Blue1Brown
+The Coding Train
+-->
