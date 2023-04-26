@@ -1,15 +1,42 @@
 "use strict";
 
-/*listen for button click on Create Button to trigger function1*/
-let touchEvent = "ontouchstart" in window ? "touchstart" : "click";
-document.getElementById("button1").addEventListener(touchEvent, function1);
+/*listen for button click on Main Button to trigger function1*/
+let touchEvent1 = "ontouchstart" in window ? "touchstart" : "click";
+document
+  .getElementById("btnMain")
+  .addEventListener(touchEvent1, funcMainScreen);
 
-/*let btnClick = document.getElementById("button1");
-btnClick.addEventListener("click", function1);*/
+/*listen for button click on Unit-Org Button to trigger function2*/
+let touchEvent2 = "ontouchstart" in window ? "touchstart" : "click";
+document
+  .getElementById("btnReturn")
+  .addEventListener(touchEvent2, funcReturnMain);
 
+/*listen for button click on Unit-Org Button to trigger function2*/
+let touchEvent3 = "ontouchstart" in window ? "touchstart" : "click";
+document.getElementById("button1").addEventListener(touchEvent3, funcUnitOrg);
+
+function funcMainScreen() {
+  let screenSel = document.getElementById("typeMain");
+  let screenSelVal = screenSel.value;
+  if (screenSelVal === "1") {
+    document.getElementById("screenMain").style.display = "none";
+    document.getElementById("screenUnit").style.display = "block";
+    screenSelVal = undefined;
+  }
+}
+
+function funcReturnMain() {
+  document.getElementById("screenMain").style.display = "block";
+  document.getElementById("screenUnit").style.display = "none";
+  let canvas = document.getElementById("canvas1");
+  let ctx = canvas.getContext("2d");
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+/*unit org screen section to create unit org screen select items for main frame area A */
 /*array for storing all Main A unit icon frames*/
 const unitMainA = ["Select...", "Friendly", "Enemy", "Neutral", "Unknown"];
-
 /*append all unitMainA list items to Main A HTML selector */
 for (let i = 0; i < unitMainA.length; i++) {
   var option = document.createElement("option");
@@ -19,7 +46,8 @@ for (let i = 0; i < unitMainA.length; i++) {
   select.appendChild(option);
 }
 
-/*array for storing all Mod B unit echelon modifier things*/
+/*unit org screen section to create unit org echelon select items for mod B*/
+/*array for storing all Mod B unit echelon modifiers*/
 const unitModB = [
   "Select...",
   "Team",
@@ -37,7 +65,6 @@ const unitModB = [
   "Theater",
   "Command",
 ];
-
 /*append all unitModB list items to Mod B HTML selector */
 for (let i = 0; i < unitModB.length; i++) {
   var option = document.createElement("option");
@@ -47,7 +74,7 @@ for (let i = 0; i < unitModB.length; i++) {
   select.appendChild(option);
 }
 
-/*array for storing all img file names*/
+/*unit org screen array for storing all img file names broken into two subsets for each of the two unit org selectors, note how a blank svg is added for the times when a user doesnt elect to use that selector*/
 const imgArrayName = [
   [
     "blank.svg",
@@ -75,6 +102,7 @@ const imgArrayName = [
   ],
 ];
 
+/*unit org screen array for storing all the img files paired to the file name array, could probably create a larger data set to store these all consolidated, anyways... this is to align each specific image against the canvas appropriately so they all match up nicely */
 const imgArrayLocation = [
   [
     [0, 0, 0, 0, 0, 0, 0, 0],
@@ -102,14 +130,14 @@ const imgArrayLocation = [
   ],
 ];
 
-/*array for storing all html wrapper modifier and amplifier user inputs paired with their output areas in html wrapper2 */
+/*unit org screen array for storing selector user inputs*/
 const imgSelectors = ["inputChpt2MainA", "inputChpt2ModB"];
 
-/*run through list of input selections in imgTileArea array to pull from selector and push to img output in html wrapper2*/
-function function1() {
+/*unit org screen image build function to run through list of input selections in imgTileArea array to pull from selector and push to img output in html wrapper2*/
+function funcUnitOrg() {
   const canvas = document.getElementById("canvas1");
   const ctx = canvas.getContext("2d");
-  ctx.clearRect(0,0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.lineWidth = 1.2;
   for (let i = 0; i < imgSelectors.length; i++) {
     let imgInput = document.getElementById(imgSelectors[i]).value;
