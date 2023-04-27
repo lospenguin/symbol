@@ -15,7 +15,7 @@ body {
 .wrapper {
   margin: 10px auto 10px auto;
   background: #dedfe7;
-  width: 75vw;
+  width: 360px;
   height: 400px;
   border-radius: 16px;
   border-style: solid;
@@ -28,7 +28,7 @@ body {
 .wrapper2 {
   margin: 10px auto 10px auto;
   background: #dedfe7;
-  width: 75vw;
+  width: 360px;
   height: 400px;
   border-radius: 16px;
   border-style: solid;
@@ -48,7 +48,6 @@ body {
 }
 
 .wrapper .bottom {
-  padding: 20px;
   height: 30vh;
 }
 
@@ -72,9 +71,10 @@ body {
   padding: 4px;
   width: 50%;
   height: 50px;
-  font-size: 1.1em;
-  background-color: #3a643c;
-  color: #dedfe7;
+  font-size: 1.05em;
+  background-color: #3161a0;
+  font-weight: bold;
+  color: #bbbdd8;
   border-radius: 12px;
   -webkit-transition: all 0.4 ease;
   -moz-transition: all 0.4s ease;
@@ -86,19 +86,27 @@ body {
   filter: opacity(0.8);
 }
 
-.wrapper .bottom .footer {
+.footer {
+  text-align: left;
   padding: 12px;
-  margin: 15px 15px 0 0;
   font-size: 12px;
-  margin-top: 12px;
+  margin-top: 10%;
 }
 
-canvas {
+#wrapper2para {
+  margin-top: 50%;
+}
+
+#canvas1 {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
+}
+
+#orgScrnFtr {
+  margin-top: 5%;
 }
 
 @media screen and (min-width: 400px) {
@@ -108,25 +116,27 @@ canvas {
 }
 
 @media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 480px;
+  }
+
+  .wrapper2 {
+    width: 480px;
+  }
+
   .wrapper .top {
-    font-size: 2em;
+    font-size: 1.1em;
   }
   .wrapper .bottom {
     font-size: 1.1em;
   }
-  .wrapper .bottom .footer {
-    font-size: 1.2em;
+  .footer {
+    font-size: 14px;
   }
   select {
-    font-size: 1.1em;
+    font-size: 0.74em;
   }
-  canvas {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  canvas {
-    width: 750px;
+  #wrapper2para {
+    margin-top: 32%;
   }
 }
