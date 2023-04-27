@@ -16,6 +16,7 @@ document
 let touchEvent3 = "ontouchstart" in window ? "touchstart" : "click";
 document.getElementById("button1").addEventListener(touchEvent3, funcUnitOrg);
 
+/*for return button, select values and the canvas are cleared*/
 function funcMainScreen() {
   let screenSel = document.getElementById("typeMain");
   let screenSelVal = screenSel.value;
@@ -32,6 +33,10 @@ function funcReturnMain() {
   let canvas = document.getElementById("canvas1");
   let ctx = canvas.getContext("2d");
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  let select = document.getElementById("inputChpt2MainA");
+  select.selectedIndex = 0;
+  let select2 = document.getElementById("inputChpt2ModB");
+  select2.selectedIndex = 0;
 }
 
 /*unit org screen section to create unit org screen select items for main frame area A */
@@ -39,10 +44,10 @@ function funcReturnMain() {
 const unitMainA = ["Select...", "Friendly", "Enemy", "Neutral", "Unknown"];
 /*append all unitMainA list items to Main A HTML selector */
 for (let i = 0; i < unitMainA.length; i++) {
-  var option = document.createElement("option");
+  let option = document.createElement("option");
   option.text = unitMainA[i];
   option.value = i;
-  var select = document.getElementById("inputChpt2MainA");
+  let select = document.getElementById("inputChpt2MainA");
   select.appendChild(option);
 }
 
@@ -67,66 +72,66 @@ const unitModB = [
 ];
 /*append all unitModB list items to Mod B HTML selector */
 for (let i = 0; i < unitModB.length; i++) {
-  var option = document.createElement("option");
+  let option = document.createElement("option");
   option.text = unitModB[i];
   option.value = i;
-  var select = document.getElementById("inputChpt2ModB");
+  let select = document.getElementById("inputChpt2ModB");
   select.appendChild(option);
 }
 
 /*unit org screen array for storing all img file names broken into two subsets for each of the two unit org selectors, note how a blank svg is added for the times when a user doesnt elect to use that selector*/
 const imgArrayName = [
   [
-    "blank.svg",
-    "symbFrameActvInstFdlyK.svg",
-    "symbFrameActvInstEnyK.svg",
-    "symbFrameActvInstNeutK.svg",
-    "symbFrameActvInstUnkK.svg",
+    "./img/blank.svg",
+    "./img/symbFrameActvInstFdlyK.svg",
+    "./img/symbFrameActvInstEnyK.svg",
+    "./img/symbFrameActvInstNeutK.svg",
+    "./img/symbFrameActvInstUnkK.svg",
   ],
   [
-    "blank.svg",
-    "symbAmpBTm.svg",
-    "symbAmpBSqd.svg",
-    "symbAmpBSect.svg",
-    "symbAmpBPlt.svg",
-    "symbAmpBCo.svg",
-    "symbAmpBBn.svg",
-    "symbAmpBGrpRgt.svg",
-    "symbAmpBBde.svg",
-    "symbAmpBDiv.svg",
-    "symbAmpBCps.svg",
-    "symbAmpBTa.svg",
-    "symbAmpBAg.svg",
-    "symbAmpBT.svg",
-    "symbAmpBCmd.svg",
+    "./img/blank.svg",
+    "./img/symbAmpBTm.svg",
+    "./img/symbAmpBSqd.svg",
+    "./img/symbAmpBSect.svg",
+    "./img/symbAmpBPlt.svg",
+    "./img/symbAmpBCo.svg",
+    "./img/symbAmpBBn.svg",
+    "./img/symbAmpBGrpRgt.svg",
+    "./img/symbAmpBBde.svg",
+    "./img/symbAmpBDiv.svg",
+    "./img/symbAmpBCps.svg",
+    "./img/symbAmpBTa.svg",
+    "./img/symbAmpBAg.svg",
+    "./img/symbAmpBT.svg",
+    "./img/symbAmpBCmd.svg",
   ],
 ];
 
 /*unit org screen array for storing all the img files paired to the file name array, could probably create a larger data set to store these all consolidated, anyways... this is to align each specific image against the canvas appropriately so they all match up nicely */
 const imgArrayLocation = [
   [
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 500, 500, 95, 45, 100, 100],
-    [0, 0, 500, 500, 101, 40, 100, 100],
-    [0, 0, 500, 500, 112, 45, 100, 100],
-    [0, 0, 500, 500, 105, 40, 100, 100],
+    [0, 0, 0, 0, 0, 0, 0, 0], //proportionate placement complete ppc
+    [0, 0, 1600, 800, 0, 0, 300, 150], //friendly, ppc
+    [0, 0, 1600, 800, 0, 6, 300, 150], //enemy, ppc
+    [0, 0, 1600, 800, 0, 0, 300, 150], //neutral, ppc
+    [0, 0, 1600, 800, -190, -75, 700, 350], //unknown, ppc
   ],
   [
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 150, 150, 118, 6, 91, 91],
-    [0, 0, 600, 600, 133.5, 22, 91, 91],
-    [0, 0, 600, 600, 123, 22, 90, 90],
-    [0, 0, 600, 600, 114, 20, 86, 86],
-    [0, 0, 175, 175, 139.5, 18, 102, 102],
-    [0, 0, 175, 175, 134.25, 18, 102, 102],
-    [0, 0, 175, 175, 129.25, 18, 102, 102],
-    [0, 0, 150, 150, 121.0, 8, 102, 102],
-    [0, 0, 150, 150, 113.0, 8, 102, 102],
-    [0, 0, 150, 150, 106.0, 8, 102, 102],
-    [0, 0, 150, 150, 100.0, 8, 102, 102],
-    [0, 0, 150, 150, 92.0, 8, 102, 102],
-    [0, 0, 150, 150, 84.0, 8, 102, 102],
-    [0, 0, 150, 150, 109.0, 6, 102, 102],
+    [0, 0, 0, 0, 0, 0, 0, 0], //ppc
+    [0, 0, 50, 50, 129, 20, 32, 32], //team
+    [0, 0, 112, 108, 140, 20, 20, 18], //squad
+    [0, 0, 246, 108, 130, 20, 40, 18], //section
+    [0, 0, 380, 108, 120, 20, 60, 18], //platoon
+    [0, 0, 50, 50, 130, 16, 50, 50], //company
+    [0, 0, 50, 50, 126, 16, 50, 50], //battalion
+    [0, 0, 50, 50, 122, 16, 50, 50], //group or regiment
+    [0, 0, 50, 50, 127, 16, 50, 50], //brigade
+    [0, 0, 50, 50, 118, 16, 50, 50], //division
+    [0, 0, 85, 50, 104, 16, 95, 50], //corps
+    [0, 0, 100, 50, 100, 16, 100, 50], //theater army
+    [0, 0, 112, 50, 92, 16, 110, 50], //army group
+    [0, 0, 128, 50, 87, 16, 120, 50], //theater
+    [0, 0, 50, 50, 118, 16, 50, 50], //command
   ],
 ];
 
@@ -142,7 +147,9 @@ function funcUnitOrg() {
   for (let i = 0; i < imgSelectors.length; i++) {
     let imgInput = document.getElementById(imgSelectors[i]).value;
     let imgVar = document.createElement("img");
-    imgVar.src = imgArrayName[i][imgInput];
+    let source = imgArrayName[i][imgInput];
+    console.log(source);
+    imgVar.src = source;
     imgVar.onload = function () {
       ctx.drawImage(
         imgVar,
