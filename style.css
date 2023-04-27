@@ -93,9 +93,10 @@ body {
   margin-top: 10%;
 }
 
+/*
 #wrapper2para {
   margin-top: 50%;
-}
+}*/
 
 #canvas1 {
   position: relative;
@@ -104,10 +105,11 @@ body {
   transform: translate(-50%, -50%);
   width: 70%;
 }
-
+/*
 #orgScrnFtr {
   margin-top: 5%;
 }
+*/
 
 @media screen and (min-width: 400px) {
   canvas {
