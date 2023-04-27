@@ -1,0 +1,8 @@
+<svg width="1600" height="800" xmlns="http://www.w3.org/2000/svg">
+<rect x="570" y="247" width="460" height="306" stroke="#000000" stroke-width="32" stroke-miterlimit="8" fill="none" />
+</svg>
+
+<!--
+  .proportions of frame IAW TABLE VIII MIL-STD-2525C v20081117
+  .size of svg and shape were kept the same to make sizing to the canvas easier mathematically
+-->
