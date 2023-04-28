@@ -1,7 +1,7 @@
 # symbol
 Military Symbol Generator (Pilot)
 
-This full stack GUI allows a user to generate a military symbol.
+This full stack GUI allows a user to generate standard military symbols.
 
 TO DO: 
 1. Add another wrapper below canvas that will explain the sourcing of the symbols
