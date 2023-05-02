@@ -1,6 +1,6 @@
 <!--Open Source Software by Los Penguin
 This full stack web application sources itself from U.S. Army Field Manual 1-02.2, Military Symbols.
-Last Update: 2023 04 27 version 1.6-->
+Last Update: 2023 04 25-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,54 +15,90 @@ Last Update: 2023 04 27 version 1.6-->
 
 <body>
 
+  <!-- TOP WRAP -->
+  <!-- NOTE: Eventually this will be one of three part sub sections, a top, middle, and bottom for the selectors, symbol canvas, and symbol reference section respectively-->
   <div class="wrapper">
-
+    <!--
+        
+        
+    BREAK
+        
+        
+    -->
+    <!-- TOP WRAP TOP HALF BANNER AREA-->
     <div class="top">
       <p>MILITARY SYMBOLS</p>
     </div>
+    <!--
+    
+    
+    BREAK
+    
+    
+        -->
+    <!-- TOP WRAP BOTTOM HALF, TWBH, SELECTOR AREA-->
 
-    <!-- main screen displayed on startup but display set to none after selector calls function in javascript-->
+    <!-- TWBH SELECTOR AREA MAIN SCREEN OPTION-->
     <div class="bottom" id="screenMain" style="display: block;">
-      <div id="screenMaintxt" class="info">Select Category...</div>
-      <div class="input-box">
-        <select title="selTitle1" id="typeMain">
+      <div class="screenInfo" id="screenMaintxt">Select Category...</div>
+      <div class="selWrap">
+        <select title="sel1" class="selector" id="selMainCategory">
+          <option value="0">Select...</option>
           <option value="1">Unit & Organizations</option>
           <option value="2">Equipment</option>
-          <option value="3">Installation/Activities</option>
-          <option value="4">Control Measures</option>
-          <option value="4">Tactical Mission Tasks</option>
+          <option value="3">Installation & Activities</option>
+          <option value="4">Control Measures & Tasks</option>
         </select>
       </div>
-      <div class="button">
-        <button id="btnMain" type="button">NEXT...</button>
+      <div class="btnWrap">
+        <button class="button" id="btnMain" type="button">NEXT...</button>
       </div>
-      <div class="footer" title="2023 - LosPenguin">Note: Only Unit & Organization is working at the moment. Excuse the
+      <div class="footer" title="2023 - LosPenguin">Note: Only Unit & Organization is working at the moment. Excuse
+        the
         construction. More coming soon. This is an Open Source product.</div>
     </div>
+    <!--
 
-    <!-- unit org screen displayed on main screen selector, display set to none at start of software load-->
-    <div class="bottom" id="screenUnit" style="display: none;">
-      <div class="info">UNIT & ORGANIZATION</div>
-      <div class="input-box">
-        <select title="inputChpt2MainA" id="inputChpt2MainA"></select>
-        <select title="inputChpt2ModB" id="inputChpt2ModB"></select>
+
+    BREAK
+
+
+    -->
+    <!-- TWBH SELECTOR AREA CATEGORY SCREEN OPTION-->
+    <div class="bottom" id="screenDisplay" style="display: none;">
+      <div class="screenInfo">
+        <p id="screenInfo">#</p>
       </div>
-      <div class="button">
-        <button id="button1" type="button">CREATE</button>
+      <div class="selWrap" id="divSel"></div>
+      <div class="btnWrap">
+        <button class="button" id="btnCreate" type="button">CREATE</button>
       </div>
-      <div class="button">
-        <button id="btnReturn" type="button">Main Screen</button>
+      <div class="btnWrap">
+        <button class="button" id="btnReturn" type="button">Main Screen</button>
       </div>
     </div>
-
   </div>
-
-  <!--canvas wrapper set at bottom of screen-->
+  <!--
+      
+      
+    BREAK
+      
+      
+    -->
+  <!-- BOTTOM WRAP -->
   <div class="wrapper2">
-    <canvas id="canvas1"></canvas>
+    <canvas class="canvas" id="canvas"></canvas>
   </div>
+  <!--
+  
+  
+    BREAK
+  
+  
+  -->
 
   <script src="script.js"></script>
+
 </body>
 
 </html>
