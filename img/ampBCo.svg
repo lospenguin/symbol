@@ -9,10 +9,9 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    version="1.1"
    id="svg2697">
-  <g id="layer1">
+  <g>
     <path
        style="fill:#040404;fill-opacity:1;stroke:#000000;stroke-width:14;stroke-dasharray:none;stroke-opacity:1"
-       d="m 450,74 v 46"
-       id="path4927"/>
+       d="m 450,74 v 46"/>
   </g>
 </svg>
