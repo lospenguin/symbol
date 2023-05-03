@@ -41,7 +41,14 @@ let arraySelectors = [
   ],
   [
     ["Select...", "img/blank.svg"],
-    ["Rifle", "img/blank.svg"],
+    ["Friendly", "img/mainAFrameFdlyEquip.svg"],
+    ["Enemy", "img/mainAFrameEny.svg"],
+    ["Neutral", "img/mainAFrameNeu.svg"],
+    ["Unknown", "img/mainAFrameUnk.svg"],
+  ],
+  [
+    ["Select...", "img/blank.svg"],
+    ["Rifle", "img/mainAEquipRfl.svg"],
     ["Light . Machine Gun", "img/blank.svg"],
     ["Medium . Machine Gun", "img/blank.svg"],
     ["Heavy . Machine Gun", "img/blank.svg"],
@@ -51,7 +58,7 @@ let arraySelectors = [
 let arrayCategory = [
   ["Select Category"],
   ["Unit & Organizations", arraySelectors[0], arraySelectors[1]],
-  ["Equipment", arraySelectors[0], arraySelectors[2]],
+  ["Equipment", arraySelectors[2], arraySelectors[3]],
   ["Installation & Activities"],
   ["Control Measures & Tasks"],
 ];
