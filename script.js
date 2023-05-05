@@ -4,8 +4,8 @@ let screenSel;
 let screenSelVal;
 let btnSelOpt1;
 let btnSelOpt2 = "empty";
-let btnSelOpt3;
-let btnSelOpt4;
+let btnSelOpt3; //not used
+let btnSelOpt4; //not used
 /*
 
 
@@ -16,14 +16,16 @@ BREAK
 /*arrays for all main and mod icon selectors*/
 let arraySelectors = [
   [
-    ["Select...", "img/blank.svg"],
+    //unit,installation main frame A type
+    ["Frame Type...", "img/blank.svg"],
     ["Friendly", "img/mainAFrameFdly.svg"],
     ["Enemy", "img/mainAFrameEny.svg"],
     ["Neutral", "img/mainAFrameNeu.svg"],
     ["Unknown", "img/mainAFrameUnk.svg"],
   ],
   [
-    ["Select...", "img/blank.svg"],
+    //unit modifier B echelon
+    ["Echelon...", "img/blank.svg"],
     ["Team", "img/ampBTm.svg"],
     ["Squad", "img/ampBSqd.svg"],
     ["Section", "img/ampBSect.svg"],
@@ -40,27 +42,46 @@ let arraySelectors = [
     ["Command", "img/ampBCmd.svg"],
   ],
   [
-    ["Select...", "img/blank.svg"],
+    //equipment frame A type
+    ["Frame Type...", "img/blank.svg"],
     ["Friendly", "img/mainAFrameFdlyEquip.svg"],
     ["Enemy", "img/mainAFrameEny.svg"],
     ["Neutral", "img/mainAFrameNeu.svg"],
     ["Unknown", "img/mainAFrameUnk.svg"],
   ],
   [
-    ["Select...", "img/blank.svg"],
+    //equipment modifier B equipment type
+    ["Equipment...", "img/blank.svg"],
     ["Rifle", "img/mainAEquipRfl.svg"],
-    ["Light . Machine Gun", "img/blank.svg"],
-    ["Medium . Machine Gun", "img/blank.svg"],
-    ["Heavy . Machine Gun", "img/blank.svg"],
+    ["Rifle . Single Shot", "img/mainAEquipRflSngl.svg"],
+    ["Rifle . Semi Auto", "img/mainAEquipRflSemi.svg"],
+    ["Rifle . Automatic", "img/mainAEquipRflAuto.svg"],
+    ["Machine Gun", "img/mainAEquipMg.svg"],
+    ["Machine Gun . Light", "img/mainAEquipMgLt.svg"],
+    ["Machine Gun . Medium", "img/mainAEquipMgMed.svg"],
+    ["Machine Gun . Heavy", "img/mainAEquipMgHvy.svg"],
+  ],
+  [
+    //equipment modifier R mobility
+    ["Mobility...", "img/blank.svg"],
+    ["Wheeled . Road", "img/ampRWhlR.svg"],
+    ["Wheeled . X-Ctry", "img/ampRWhlX.svg"],
+    ["Tracked", "img/ampRTrk.svg"],
+    ["Wheeled + Tracked", "img/ampRTrkW.svg"],
+  ],
+  [
+    //graphic control measure
+    ["Control Measure...", "img/blank.svg"],
+    ["Battle Position", "img/gcmbp1.svg"],
   ],
 ];
 /*array for screenDisplay - primary array*/
 let arrayCategory = [
   ["Select Category"],
   ["Unit & Organizations", arraySelectors[0], arraySelectors[1]],
-  ["Equipment", arraySelectors[2], arraySelectors[3]],
-  ["Installation & Activities"],
-  ["Control Measures & Tasks"],
+  ["Equipment", arraySelectors[2], arraySelectors[3], arraySelectors[4]],
+  ["Installation & Activities", arraySelectors[0]],
+  ["Control Measures & Tasks", arraySelectors[5]],
 ];
 /*
 
