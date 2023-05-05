@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<!-- Created using Krita: https://krita.org -->
 <svg xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:krita="http://krita.org/namespaces/svg/krita"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
     width="2550pt"
     height="1275pt"
     viewBox="0 0 2550 1275">
-<defs/>
-<g id="group0" transform="matrix(0.999999964120272 0 0 0.999999964120272 899.295224376596 375.011628729392)" fill="none">
-  <path id="shape1" transform="matrix(4.87925662524522 0 0 4.87925662524522 185.756668313561 3.21555376103788e-07)" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M0 37.1201C1.282 15.3451 19.526 -1.24191 40.75 0.0730877C59.348 1.22509 74.473 15.8741 76.663 34.8571" sodipodi:nodetypes="ccc"/>
-  <path id="shape2" transform="matrix(4.87925662524522 0 0 4.87925662524522 561.532617306822 180.537048067117)" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M0.121 0.00115464C21.384 -0.162845 38.752 17.1642 38.914 38.7022C39.076 60.2412 21.971 77.8342 0.709 77.9992C0.473 78.0012 0.237 78.0002 0 77.9982" sodipodi:nodetypes="cccc"/>
-  <path id="shape3" transform="matrix(4.87925662524522 0 0 4.87925662524522 185.693237977433 566.633379383352)" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M76.84 0.718C75.287 22.2 56.838 38.339 35.632 36.766C16.316 35.333 1.058 19.589 0 0" sodipodi:nodetypes="ccc"/>
-  <path id="shape4" transform="matrix(4.87925662524522 0 0 4.87925662524522 1.96973815036472e-09 180.640267016829)" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M37.1727 78.936C15.6577 77.913 -0.96631 59.419 0.0436904 37.628C0.99669 17.05 17.4037 0.67 37.7327 0" sodipodi:nodetypes="ccc"/>
- </g>
+<g transform="matrix(1 0 0 1 899.295 375.012)" fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" >
+  <path transform="matrix(4.879 0 0 4.879 185.757 0)" d="M0 37.1201C1.282 15.3451 19.526 -1.24191 40.75 0.0730877C59.348 1.22509 74.473 15.8741 76.663 34.8571"/>
+  <path transform="matrix(4.879 0 0 4.879 561.533 180.537)" d="M0.121 0.00115464C21.384 -0.162845 38.752 17.1642 38.914 38.7022C39.076 60.2412 21.971 77.8342 0.709 77.9992C0.473 78.0012 0.237 78.0002 0 77.9982"/>
+  <path transform="matrix(4.879 0 0 4.879 185.693 566.633)" d="M76.84 0.718C75.287 22.2 56.838 38.339 35.632 36.766C16.316 35.333 1.058 19.589 0 0"/>
+  <path transform="matrix(4.879 0 0 4.879 0 180.640)" d="M37.1727 78.936C15.6577 77.913 -0.96631 59.419 0.0436904 37.628C0.99669 17.05 17.4037 0.67 37.7327 0"/>
+</g>
 </svg>
+<!--
+
+20230501    
+Created ICW LosPenguin & Krita: https://krita.org
+
+-->
