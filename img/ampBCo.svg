@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<?xml version="1.0" standalone="no"?>
 
-<svg
-   width="900mm"
-   height="450mm"
-   viewBox="0 0 900 450"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   version="1.1"
-   id="svg2697">
-  <g>
-    <path
-       style="fill:#040404;fill-opacity:1;stroke:#000000;stroke-width:14;stroke-dasharray:none;stroke-opacity:1"
-       d="m 450,74 v 46"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" 
+    width="2550pt"
+    height="1275pt"
+    viewBox="0 0 2550 1275">
+<path transform="matrix(1 0 0 1 1275 181.87)" fill="none" stroke="#000000" stroke-width="24" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L0 123.75"/>
 </svg>
+
+<!-- Created ICW Krita: https://krita.org -->
