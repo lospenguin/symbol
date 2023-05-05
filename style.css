@@ -49,6 +49,7 @@ BREAK
 /* TOP WRAP TOP HALF BANNER AREA */
 .wrapper .top {
   display: flex;
+  margin: -2px; /* dumb that i had to do this. need to review */
   color: #dedfe7;
   justify-content: center;
   align-items: center;
@@ -75,6 +76,7 @@ BREAK
 .wrapper .bottom .selector {
   height: 30px;
   width: 100px;
+  font-size: 0.75em;
   margin: 2px;
   background-color: #f7f7f7;
   border-radius: 8px;
@@ -116,12 +118,11 @@ BREAK
 */
 /* BOTTOM WRAP CANVAS */
 #canvas {
-  margin-top: 36px;
-  width: 95%;
+  margin-top: 20px;
+  width: 300px;
+  height: 150px;
 }
 /*
-  margin-top: 55px;
-  margin-left: 22px;
 
 
 BREAK
@@ -136,14 +137,6 @@ BREAK
 }
 
 @media screen and (min-width: 1200px) {
-  .wrapper {
-    width: 480px;
-  }
-
-  .wrapper2 {
-    width: 480px;
-  }
-
   .wrapper .top {
     font-size: 1.1em;
   }
@@ -156,7 +149,5 @@ BREAK
   select {
     font-size: 0.74em;
   }
-  #canvas {
-    margin-top: 20px;
-  }
 }
+
