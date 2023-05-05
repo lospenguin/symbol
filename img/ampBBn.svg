@@ -1,87 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="900mm"
-   height="450mm"
-   viewBox="0 0 900 450"
-   version="1.1"
-   id="svg2697"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="ampBBn.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview2699"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="true"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="0.35571759"
-     inkscape:cx="1650.1855"
-     inkscape:cy="624.09059"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
-  <defs
-     id="defs2694">
-    <rect
-       x="1273.4821"
-       y="376.70333"
-       width="314.85651"
-       height="354.21357"
-       id="rect245" />
-    <rect
-       x="1057.0183"
-       y="452.60623"
-       width="269.87701"
-       height="244.57604"
-       id="rect239" />
-    <rect
-       x="1324.0841"
-       y="300.80042"
-       width="798.38615"
-       height="666.25887"
-       id="rect233" />
-  </defs>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <text
-       xml:space="preserve"
-       transform="scale(0.26458333)"
-       id="text231"
-       style="white-space:pre;shape-inside:url(#rect233);display:inline;fill:#000000" />
-    <text
-       xml:space="preserve"
-       transform="scale(0.26458333)"
-       id="text237"
-       style="white-space:pre;shape-inside:url(#rect239);display:inline;fill:#000000" />
-    <text
-       xml:space="preserve"
-       transform="scale(0.26458333)"
-       id="text243"
-       style="white-space:pre;shape-inside:url(#rect245);display:inline;fill:#000000" />
-    <path
-       style="fill:#040404;fill-opacity:1;stroke:#000000;stroke-width:14;stroke-dasharray:none;stroke-opacity:1"
-       d="m 438,74 v 46"
-       id="path4927"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:#040404;fill-opacity:1;stroke:#000000;stroke-width:14;stroke-dasharray:none;stroke-opacity:1"
-       d="m 462,74 v 45.99999"
-       id="path4927-3"
-       sodipodi:nodetypes="cc" />
-  </g>
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+    width="2550pt"
+    height="1275pt"
+    viewBox="0 0 2550 1275">
+<defs/>
+<path transform="matrix(1 0 0 1 1248.75 181.875)" fill="none" stroke="#000000" stroke-width="24" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L0 123.75"/>
+<path transform="matrix(1 0 0 1 1301.25 181.8751)" fill="none" stroke="#000000" stroke-width="24" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L0 123.75"/>
 </svg>
+
+<!-- Created ICW Krita: https://krita.org -->
