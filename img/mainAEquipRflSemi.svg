@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+    width="2550pt"
+    height="1275pt"
+    viewBox="0 0 2550 1275">
+<g fill="none" stroke="#000000" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+<path transform="matrix(1 0 0 1 1275 496.508)" d="M0 0L0 506.25"/> <!-- arrow line -->
+<path transform="matrix(1 0 0 1 1215 485.625)" d="M60 0L0 105"/> <!-- left arrow head -->
+<path transform="matrix(1 0 0 1 1275 485.625)" d="M0 0L60 105"/> <!-- right arrow head -->
+<path transform="matrix(1 0 0 1 1200 706.875)"  d="M0 0L150 0"/> <!-- even top horizontal -->
+<path transform="matrix(1 0 0 1 1200 759.375)" d="M0 0L150 0"/> <!-- even bottom horizontal -->
+</g>
+</svg>
+<!--
+
+20230501    
+Created ICW LosPenguin & Krita: https://krita.org
+
+-->

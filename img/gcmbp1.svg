@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+    width="2550pt"
+    height="1275pt"
+    viewBox="0 0 2550 1275">
+
+<g transform="matrix(6.39 0 0 7.044 -898.5 -2739.64)" fill="none" >
+
+  <path transform="translate(246.5, 413.5)" fill="none" stroke="#000000" stroke-width="5.33333" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" d="M80.4849 103.986C63.2209 103.316 45.9559 102.646 32.9869 95.9491C20.0169 89.2511 7.72194 75.8561 2.66894 63.8001C-2.38406 51.7441 0.983947 32.3211 2.66894 23.6131C4.35294 14.9061 5.86894 14.7391 12.7749 11.5581C19.6809 8.37615 26.5859 6.36715 44.1039 4.52515C61.6209 2.68315 97.4969 1.00915 117.878 0.50615C138.258 0.00414935 153.586 -0.66585 166.387 1.51115C179.188 3.68815 188.283 7.87415 194.684 13.5671C201.084 19.2601 203.947 24.4511 204.79 35.6691C205.632 46.8881 203.947 69.9951 199.737 80.8791C195.526 91.7631 191.652 96.6191 179.524 100.972C167.397 105.326 147.185 106.163 126.973 107"/>
+
+  <rect transform="translate(326.5, 503.5)" fill="none" stroke="#000000" stroke-width="2.66667" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" width="46" height="48"/>
+  
+  <text transform="translate(342.401, 535)" fill="#000000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" font-family="Calibri,Calibri_MSFontService,sans-serif" font-size="24">B</text>
+
+  <rect transform="translate(325.5, 439.5)" fill="none" stroke="#000000" stroke-width="2.66667" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8" width="46" height="48"/>
+  
+  <text transform="translate(342.58, 470)" fill="#000000" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel" font-family="Calibri,Calibri_MSFontService,sans-serif" font-size="24">T</text>
+  
+</g>
+</svg>
+
+<!-- Created ICW Krita: https://krita.org -->
